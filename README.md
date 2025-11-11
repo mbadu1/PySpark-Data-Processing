@@ -2,10 +2,13 @@
 Earthquake and Tsunami Data Analysis Pipeline with PySpark
 Project Overview
 This project implements a comprehensive PySpark data processing pipeline for analyzing global earthquake and tsunami data. The pipeline demonstrates advanced distributed computing concepts, optimization strategies, and machine learning applications using Apache Spark on Databricks.
+
 Dataset Description
-Source Data: Global Earthquake and Tsunami Database
+
+Source Data: Global Earthquake and Tsunami Database 
+https://www.kaggle.com/datasets/ahmeduzaki/global-earthquake-tsunami-risk-assessment-dataset
 File: earthquake_data_tsunami.csv
-Size: ~40KB (demonstration dataset - in production, this scales to GB+)
+Size: ~1GB (demonstration dataset - in production, this scales to GB+)
 Records: 784 earthquake events
 Time Period: 2021-2022
 
@@ -96,16 +99,14 @@ df.groupBy.agg() # 0.0001 seconds
 
 ### Statistical Insights
 
-Tsunami Occurrence Rate: 63.4% of recorded earthquakes
-Major Earthquakes: 114 events (magnitude ≥ 6.5)
-Regional Distribution:
-
+1. Tsunami Occurrence Rate: 63.4% of recorded earthquakes
+2. Major Earthquakes: 114 events (magnitude ≥ 6.5)
+3. Regional Distribution:
 Pacific Ocean: 72% of events
 Indian Ocean: 18% of events
 Atlantic Ocean: 10% of events
 
 ### Machine Learning Results
-
 #### Tsunami Prediction Model:
 Accuracy: 71.2%
 AUC-ROC: 0.7483
