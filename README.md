@@ -78,11 +78,16 @@ df.select()      # 0.0001 seconds
 df.withColumn()  # 0.0002 seconds
 df.groupBy.agg() # 0.0001 seconds
 
-## Join Operations
 
 ### GroupBy Statistics by magnitude category
 ![alt text](Images/image5.png)
 
 ## SQL queries
+
+### SQL Query 1: Top 10 tsunami-generating earthquakes by magnitude
+
 ![alt text](Images/Image6.png)
 ![alt text](Images/Sql1.png)
+
+### SQL Query 2: Monthly statistics with window functions
+
