@@ -79,3 +79,10 @@ df.withColumn()  # 0.0002 seconds
 df.groupBy.agg() # 0.0001 seconds
 
 ## Join Operations
+
+### GroupBy Statistics by magnitude category
+![alt text](Images/image5.png)
+
+## SQL queries
+![alt text](Images/Image6.png)
+![alt text](Images/Sql1.png)
