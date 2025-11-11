@@ -9,23 +9,35 @@ Size: ~40KB (demonstration dataset - in production, this scales to GB+)
 Records: 784 earthquake events
 Time Period: 2021-2022
 
-Data Schema:
+## Data Schema:
 
 magnitude (float): Earthquake magnitude on Richter scale
+
 cdi (float): Community Decimal Intensity
+
 mmi (float): Modified Mercalli Intensity
+
 sig (int): Significance score
+
 nst (int): Number of seismic stations
+
 dmin (float): Minimum distance to station
+
 gap (float): Gap between stations
+
 depth (float): Depth of earthquake in km
+
 latitude (float): Geographic latitude
+
 longitude (float): Geographic longitude
+
 Year (int): Year of occurrence
+
 Month (int): Month of occurrence
+
 tsunami (int): Binary flag (1 = tsunami generated, 0 = no tsunami)
 
-Pipeline Architecture
+## Pipeline Architecture
 1. Data Loading & Schema Definition
 
 Explicit schema definition for optimized loading
@@ -70,3 +82,5 @@ Performance comparison with DataFrame API
 Classification: Random Forest for tsunami prediction (AUC: ~0.75)
 Regression: Linear Regression for magnitude estimation (R²: ~0.45)
 Clustering: KMeans for earthquake pattern identification (5 clusters)
+
+
