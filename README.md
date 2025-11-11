@@ -92,3 +92,21 @@ df.groupBy.agg() # 0.0001 seconds
 ### SQL Query 2: Monthly statistics with window functions
 ![alt text](Images/Sql2.png)
 
+## Key Findings
+
+### Statistical Insights
+
+Tsunami Occurrence Rate: 63.4% of recorded earthquakes
+Major Earthquakes: 114 events (magnitude ≥ 6.5)
+Regional Distribution:
+
+Pacific Ocean: 72% of events
+Indian Ocean: 18% of events
+Atlantic Ocean: 10% of events
+
+### Machine Learning Results
+
+#### Tsunami Prediction Model:
+Accuracy: 71.2%
+AUC-ROC: 0.7483
+Key Features: Magnitude (0.521), Depth (0.283), Location (0.196)
