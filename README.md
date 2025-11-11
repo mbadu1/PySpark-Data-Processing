@@ -11,35 +11,12 @@ Time Period: 2021-2022
 
 ## Data Schema:
 
-magnitude (float): Earthquake magnitude on Richter scale
-
-cdi (float): Community Decimal Intensity
-
-mmi (float): Modified Mercalli Intensity
-
-sig (int): Significance score
-
-nst (int): Number of seismic stations
-
-dmin (float): Minimum distance to station
-
-gap (float): Gap between stations
-
-depth (float): Depth of earthquake in km
-
-latitude (float): Geographic latitude
-
-longitude (float): Geographic longitude
-
-Year (int): Year of occurrence
-
-Month (int): Month of occurrence
-
+magnitude (float): Earthquake magnitude on Richter scale cdi (float): Community Decimal Intensity mmi (float): Modified Mercalli Intensitysig (int): Significance score nst (int): Number of seismic stations
+dmin (float): Minimum distance to station gap (float): Gap between stations depth (float): Depth of earthquake in km latitude (float): Geographic latitude longitude (float): Geographic longitude Year (int): Year of occurrence Month (int): Month of occurrence
 tsunami (int): Binary flag (1 = tsunami generated, 0 = no tsunami)
 
 ## Pipeline Architecture
 1. Data Loading & Schema Definition
-
 Explicit schema definition for optimized loading
 Avoided schema inference overhead
 Partitioning strategy implementation
@@ -83,4 +60,22 @@ Classification: Random Forest for tsunami prediction (AUC: ~0.75)
 Regression: Linear Regression for magnitude estimation (R²: ~0.45)
 Clustering: KMeans for earthquake pattern identification (5 clusters)
 
+## Execution
 
+### Data Loading
+![alt text](Images/Img1.png)
+![alt text](Images/Image2.png)
+
+### Filtering & Transformation 
+![alt text](Images/Image4.png)
+![alt text](Images/image3.png)
+
+
+Lazy Evaluation
+#### Transformations (No execution - just building DAG)
+df.filter()      # 0.0001 seconds
+df.select()      # 0.0001 seconds  
+df.withColumn()  # 0.0002 seconds
+df.groupBy.agg() # 0.0001 seconds
+
+## Join Operations
