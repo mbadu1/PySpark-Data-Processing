@@ -90,4 +90,5 @@ df.groupBy.agg() # 0.0001 seconds
 ![alt text](Images/Sql1.png)
 
 ### SQL Query 2: Monthly statistics with window functions
+![alt text](Images/Sql2.png)
 
