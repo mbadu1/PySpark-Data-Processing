@@ -85,6 +85,20 @@ df.groupBy.agg() # 0.0001 seconds
 ### GroupBy Statistics by magnitude category
 ![alt text](Images/image5.png)
 
+### Data Processing (Complete)
+
+ Load 1GB+ dataset (Parquet format)
+
+ 2+ filter operations (4 filters implemented)
+
+ 1+ join operation (broadcast join with location table)
+
+ 1+ groupBy with aggregations (2 different aggregations)
+
+ Column transformations with withColumn 
+
+
+
 ## SQL queries
 
 ### SQL Query 1: Top 10 tsunami-generating earthquakes by magnitude
